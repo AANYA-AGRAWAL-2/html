@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset = "utf-8"/>
+		<meta name = "viewport" content = "width=device-width , initial-scale = 1">
+		<title>css project</title>
+		<style type = "text/css" >
+			body
+			{
+				margin:0;
+				padding:0;
+				line-height:1.5cm;
+			}
+            #header
+            {
+				background:black;
+				font-family : arial;
+				height:100px;
+			}
+			#contentwrapper
+			{
+				float:left;
+				width:100%;
+			}
+			#contentcolumn
+			{
+				margin:0 230px 0 230px;
+			}
+			#leftcolumn
+			{
+				float:left;
+				width:230px;
+				margin-left:-100%;
+			    background:#24C8FF;
+			}
+            #rightcolumn
+            {	float:left;
+                width:230px;
+                margin-left:-230px;
+				background:#FFFB00;
+			}
+			.innertext
+			{
+				margin:20px;
+				font-family:arial;
+				color:#5E5E5E;
+			}
+            #footer
+            {
+				background:black;
+				clear:left;
+				width:100%;
+				color:#fff;
+				font-family:arial;
+				padding:4px;
+				text-align:center;
+			}
+			/*####Navigation Bar #### */
+			 ul
+			 {
+				list-style-type:none;
+				margin:0;
+				padding:0;
+				background-color:#000;
+			 }
+             li
+             {	
+				float:left;
+				border-right:1px solid #bbb;
+			 
+			 }
+             li:last-child
+             {
+				border-right:none;
+			 }
+             li a
+             {
+				display:block;
+				color:white;
+				text-align:center;
+				padding:14px 16px;
+				text-decoration:none;
+			 }
+             li a:hover:not(.active)
+              {
+				background-color:#808080;
+			  }
+             .active
+               {
+					background-color: #0099ff;
+			   }
+	/*####Responsive layout CSS #### */
+	           
+			   
+		@media(max-width:840px)
+         {
+			#leftcolumn
+			 {
+				margin-left:-100%;
+			 }
+			#rightcolumn
+             {
+				float:none;
+				width:100%;
+				clear:both;
+				margin-left:0;
+			 }
+			#contentcolumn
+             {
+				margin-right:0;
+			 }
+	     }
+        	   
+		@media(max-width:600px)
+		{
+			
+			#leftcolumn
+             {
+				float:none;
+				width:100%;
+				clear:both;
+				margin-left:0;
+			 }
+			#contentcolumn
+             {
+				margin-left:0;
+			 }
+	     }
+       		 
+		</style>	
+	</head>
+	
+	
+		<body>
+			<div id = "container">
+				<div id ="header">
+					<ul style = "display:inline; ">
+						<li><a class ="active" href = "#home">Home</a></li>
+						<li><a class ="#" href = "#about">About</a></li>
+						<li><a class ="#" href = "#news">News</a></li>
+						<li><a class ="#" href = "#contact">Contact</a></li>
+					</ul>
+				</div>
+			<!--header close-->
+			
+              <div id ="contentwrapper">
+                   <div id = "contentcolumn">
+				      <div class = "innertext">
+						<b>Welcome!</b>Contrary to popular
+						belief, Lorem Ipsum is not simply random text. It 
+						has roots in a piece of classical Latin 
+						literature from 45 BC, making it over 2000 years old.
+						Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
+						of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+						the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum 
+						comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and 
+						Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+						during the Renaissance. The first line of Lorem Ipsum, "Lorem.
+					  </div>		
+				    </div>
+			  </div>
+			  
+
+			   <div id ="leftcolumn">
+					 <div class ="innertext">
+						<b>Left Column: <em>230px</em></b><br/>It is a long
+				           vived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+				           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+				           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            A mango is an edible stone fruit produced by the tropical tree Mangifera indica. It is believed to have
+				            originated in southern Asia, particularly in eastern India, Bangladesh, and the Andaman Islands.[1] M. indica 
+				             has been cultivated in South and Southeast Asia since ancient times resulting in two types of modern mango 
+				             cultivars: the "Indian type" and the "Southeast Asian type".[2][3] Other species in the genus Mangifera also 
+	                         produce edible fruits that are also called "mangoes", the majority of which are found in the Malesian ecoregion.[4]
+                      </div>
+                   </div>
+				        <div id = "rightcolumn">
+							<div class = "innertext">
+								<b> is an Right column: <em>230px</em></b><br/>edible stone fruit produced by the tropical
+								tree Mangifera indica. It is believed to have originated in southern Asia, particularly in 
+								eastern India, Bangladesh, and the Andaman Islands.[1] M. indica has been cultivated in South
+								and Southeast Asia since ancient times resulting in two types of modern mango cultivars: the 
+								"Indian type" and the "Southeast Asian type".[2][3] Other species in the genus Mangifera also 
+								produce edible fruits that are also called "mangoes", the majority of which are found in the 
+								Malesian ecoregion.[4]
+							</div>
+						</div>
+						
+					   <div id = "footer">Footer</div>
+					   </div>
+			
+			   	
+			</body>   
+</html>	
+			
+				
+			
+              				 
+				
+           			
+				
+			
+			
+		
